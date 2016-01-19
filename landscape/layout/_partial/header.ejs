@@ -18,12 +18,14 @@
           <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
         <% } %>
       </nav>
-      <nav id="sub-nav">
-        <% if (theme.rss){ %>
-          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
+       <nav id="sub-nav">
+        <a class="nav-icon-social" href="https://github.com/njkfei" title="GitHub" target="_blank"><img src="/imgs/github-32.png"></a>
+        <a class="nav-icon-social" href="http://weibo.com/1032111474" title="微博" target="_blank"><img src="/imgs/weibo-32.png"></a>
+        <a class="nav-icon-social" title="Search"><img src="/imgs/search-32.png"></a> 
+        <% if (theme.rss){ %>   
+        <a class="nav-icon-social" href="<%- theme.rss %>" title="RSS Feed"></a>
         <% } %>
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
+       </nav>
       <div id="search-form-wrap">
         <%- search_form({button: '&#xF002;'}) %>
       </div>

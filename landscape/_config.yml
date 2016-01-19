@@ -15,9 +15,10 @@ widgets:
 - category
 - tag
 - tagcloud
-- archive
+- weibo
 - recent_posts
 - about
+- archive
 - links
 
 # Links:
